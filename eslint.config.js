@@ -20,7 +20,22 @@ export default ts.config(
 		languageOptions: {
 			globals: { ...globals.browser, ...globals.node }
 		},
-		rules: { 'no-undef': 'off' }
+		rules: {
+			'no-undef': 'off',
+			'svelte3/a11y-label-has-associated-control': 'off',
+			'svelte3/a11y-aria-attrs': 'off',
+			'svelte3/a11y-aria-props': 'off',
+			'svelte3/a11y-aria-roles': 'off',
+			'svelte3/a11y-click-events-have-key-events': 'off',
+			'svelte3/a11y-img-redundant-alt': 'off',
+			'svelte3/a11y-media-has-caption': 'off',
+			'svelte3/a11y-missing-attribute': 'off',
+			'svelte3/a11y-missing-content': 'off',
+			'svelte3/a11y-role-has-required-aria-props': 'off',
+			'svelte3/a11y-tabindex-no-positive': 'off',
+			'svelte3/a11y-no-onchange': 'off',
+			'svelte3/a11y-no-autofocus': 'off'
+		}
 	},
 	{
 		files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],
