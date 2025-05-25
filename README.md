@@ -1,3 +1,16 @@
+# Prereq
+- nvm (Node Version Manager)
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+source ~/.bashrc
+
+# Verify w/
+nvm list-remote
+
+# install latest node version w/
+nvm install lts/*
+```
+
 # 🗺️ SvelteKit + MapLibre + PMTiles Viewer
 
 This is a lightweight map viewer built with [SvelteKit](https://kit.svelte.dev/), [MapLibre GL JS](https://maplibre.org/), and [Protomaps PMTiles](https://protomaps.com/docs/pmtiles/). It loads a local `.pmtiles` file and renders it with a clean vector style using `protomaps-themes-base`.
